@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+.calc-container {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    border-bottom: 2px solid black; 
+}
+
+.input-number[type=number], select, textarea {
+    display: flex;
+    color: white; 
+    background-color: black;
+    font-size: 36px;
+    padding: 22px;
+    text-align: right;
+    width: 300px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: none;
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: none;
+    outline: none;
+}
+.button-box {
+    background-color: rgb(175, 175, 175);
+    border-left: 2px solid black;
+    height: 75px;
+    font-size: 36px;
+    color: #333;
+    cursor: pointer;
+}
+.button-box:hover {
+    background-color: lightgrey;
+}
+.button-box:last-child {
+    background-color: darkorange;
+    border-right: 2px solid black;
+} 
+.button-box:last-child:hover {
+    background-color: rgb(255, 180, 121);
+}
+
+
+.quarter {
+    width: 25%;
+}
+.half {
+    width: 50%;
+}
+.three-quarter {
+    width: 75%;
+}
+
+
+
